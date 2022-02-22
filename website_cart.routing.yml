@@ -1,0 +1,29 @@
+website_cart.contents:
+  path: '/cart'
+  defaults:
+    _controller: '\Drupal\website_cart\Controller\WebsiteCartController::getcontents'
+    _title: 'Website Cart'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+website_cart.add_item:
+  path: '/cart/add'
+  defaults:
+    _controller: '\Drupal\website_cart\Controller\WebsiteCartController::additemtocart'
+    _title: 'Website Cart'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+website_cart.remove_item:
+  path: '/cart/remove'
+  defaults:
+    _controller: '\Drupal\website_cart\Controller\WebsiteCartController::removeitemfromcart'
+    _title: 'Website Cart'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'

@@ -1,0 +1,5 @@
+name: Website Cart Module
+description: Creates a session-based cart that doesn't require prices and emails order to administrators
+package: Custom
+type: module
+core: 8.x
