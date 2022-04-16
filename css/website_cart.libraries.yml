@@ -1,9 +1,0 @@
-website-cart:
-  version: 1.x
-  css:
-    theme:
-      css/website-cart.css: {}
-  js:
-    js/website-cart.js: {}
-  dependencies:
-    - core/jquery

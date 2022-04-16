@@ -67,7 +67,7 @@ body.path-product-meats .view-rows
 #cart-items td {
     vertical-align: bottom;
 }
-#cart-items td:last-child, #cart-items th:last-child {
+#cart-items td.quantity-col, #cart-items td.subtotal-col, #cart-items td.total-col {
     text-align: right;
     vertical-align: bottom;
 }
