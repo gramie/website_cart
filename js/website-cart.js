@@ -55,8 +55,8 @@ function displayItems(cart) {
                         <span class="item-title">${ item.title }</span><br />
                         <span class="item-details">${ item.unit_price } / ${ item.unit_size }</span>
                     </td>
-                    <td>${ item.quantity }</td>
-                    <td>${ subtotal }</td>
+                    <td class="quantity-col">${ item.quantity }</td>
+                    <td class="subtotal-col">${ subtotal }</td>
                 </tr>`;
         total += parseFloat(subtotal);
     }
@@ -64,7 +64,7 @@ function displayItems(cart) {
     html += `</tbody>
              <tfoot>
                 <tr>
-                    <th colspan="3">Total</th><th>${ totalText }</th>
+                    <th colspan="3" id="total-col">Total</th><th>${ totalText }</th>
                 </tr>
              </tfoot>`;
     html += '</table>';
