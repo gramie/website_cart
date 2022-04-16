@@ -57,6 +57,10 @@ table.views-view-table caption {
     width: 100%;
 }
 
+td.views-field-field-in-stock {
+    text-align: center;
+}
+
 .views-field-field-unit-size, .views-field-field-unit-price, .views-field-field-in-stock, .views-field-nid {
     min-width: 6em;
 }
