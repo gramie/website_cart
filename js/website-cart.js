@@ -60,6 +60,11 @@ function displayItems(cart) {
                 </tr>`;
         total += parseFloat(subtotal);
     }
+    if (cart['items'].length === 0) {
+        html += `<tr>
+                    <td colspan="4">Nothing ordered yet!</td>
+                </tr>`;
+    }
     const totalText = total.toFixed(2);
     html += `</tbody>
              <tfoot>
