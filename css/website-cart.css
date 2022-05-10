@@ -62,7 +62,11 @@ td.views-field-field-in-stock {
 }
 
 .views-field-field-unit-size, .views-field-field-unit-price, .views-field-field-in-stock, .views-field-nid {
-    min-width: 6em;
+    min-width: 9em;
+}
+
+.views-field-field-unit-price {
+    text-align: right;
 }
 
 body.path-product-meats .view-rows
@@ -87,3 +91,7 @@ body.path-product-meats .view-rows
     font-weight: bold;
 }
 
+.out-of-stock {
+    color: red;
+    font-weight: bold;
+}
