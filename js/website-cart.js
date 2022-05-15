@@ -12,7 +12,7 @@ jQuery(function() {
     jQuery('.add-item-placeholder').each(function() {
         const placeholder = jQuery(this);
         const nid = placeholder.data('itemid');
-        this.html('<input type="number" /> <button class="add-item-button">Add</button>');
+        this.html('<input type="number" step="1" min="1" max="10" /> <button class="add-item-button">Add</button>');
     });
 
     jQuery('#block-websitecartblock').on('click', '#ready-order-button', function() {
@@ -26,7 +26,17 @@ jQuery(function() {
         const phoneValue = jQuery('#order-phone').val().trim() != '';
         jQuery('#submit-order-button').attr('disabled', !(emailValue || phoneValue));
     });
+
+    // Add the help icon
+    const blockTitle = jQuery('#block-websitecartblock-title span');
+    blockTitle.html(blockTitle.html() + ' <span class="info">🛈</span>');
+
+    jQuery('#block-websitecartblock-title span.info').click(displayCartHelp);
 });
+
+function displayCartHelp() {
+    alert('ok');
+}
 
 function addItem(nid) {
     const quantity = jQuery('#add-item-quantity-' + nid).val();

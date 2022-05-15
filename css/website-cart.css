@@ -72,6 +72,20 @@ td.views-field-field-in-stock {
 body.path-product-meats .view-rows
 
 /* Sidebar Cart */
+div#block-websitecartblock {
+    border: 2px solid silver;
+    text-align: center;
+}
+
+#block-websitecartblock-title span.info {
+	color: blue;
+	cursor: pointer;
+}
+
+#cart-items {
+	width: 100%;
+}
+
 #cart-items td {
     vertical-align: bottom;
 }

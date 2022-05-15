@@ -7,10 +7,13 @@ function website_cart_mail($key, &$message, $params) {
      
     switch ($key) {
       case 'submit_order':
-        $message['from'] = \Drupal::config('system.site')->get('mail');
+        $message['from'] = 'info@houstonsnaturalmeats.com';
         $message['reply-to'] = $message['from'];
         $message['subject'] = 'New Order Received';
         $message['body'][] = $params['message'];
+	$message['headers'] = [
+		'Bcc' => $message['from'],
+	];
         break;
     }
 
